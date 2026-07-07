@@ -40,7 +40,10 @@ class MatchRemoteDataSourceImpl implements MatchRemoteDataSource {
   @override
   Future<List<MatchModel>> getMatches(String leagueSlug, {String? date, String lang = 'en'}) async {
     try {
-      final response = await dio.get(GoalHubApi.scoreboard('soccer', leagueSlug, dates: date, lang: lang));
+      final isToday = date == null || date.contains(DateTime.now().year.toString());
+      final cacheBuster = isToday ? '&_t=${DateTime.now().millisecondsSinceEpoch}' : '';
+      
+      final response = await dio.get(GoalHubApi.scoreboard('soccer', leagueSlug, dates: date, lang: lang) + cacheBuster);
       
       if (response.statusCode == 200) {
         final data = response.data;
@@ -77,7 +80,8 @@ class MatchRemoteDataSourceImpl implements MatchRemoteDataSource {
   @override
   Future<MatchDetailModel> getMatchDetails(String leagueSlug, String eventId, {String lang = 'en'}) async {
     try {
-      final response = await dio.get(GoalHubApi.matchSummary('soccer', leagueSlug, eventId, lang: lang));
+      final cacheBuster = '&_t=${DateTime.now().millisecondsSinceEpoch}';
+      final response = await dio.get(GoalHubApi.matchSummary('soccer', leagueSlug, eventId, lang: lang) + cacheBuster);
       
       if (response.statusCode == 200) {
         return MatchDetailModel.fromSummaryJson(response.data);

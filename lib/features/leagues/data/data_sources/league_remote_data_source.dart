@@ -72,7 +72,8 @@ class LeagueRemoteDataSourceImpl implements LeagueRemoteDataSource {
   Future<List<StandingModel>> getStandings(String leagueId, {String lang = 'en'}) async {
     print('[GoalHub Debug] === START Fetching Standings ===');
     try {
-      final url = GoalHubApi.standings('soccer', leagueId, lang: lang);
+      final cacheBuster = '&_t=${DateTime.now().millisecondsSinceEpoch}';
+      final url = GoalHubApi.standings('soccer', leagueId, lang: lang) + cacheBuster;
       print('[GoalHub Debug] URL: $url');
       final response = await dio.get(url);
       
@@ -147,7 +148,8 @@ class LeagueRemoteDataSourceImpl implements LeagueRemoteDataSource {
   @override
   Future<List<LeagueLeadersModel>> getLeagueLeaders(String leagueId, {String lang = 'en'}) async {
     try {
-      final url = 'https://site.web.api.espn.com/apis/common/v3/sports/soccer/$leagueId/statistics/byathlete?lang=$lang';
+      final cacheBuster = '&_t=${DateTime.now().millisecondsSinceEpoch}';
+      final url = 'https://site.web.api.espn.com/apis/common/v3/sports/soccer/$leagueId/statistics/byathlete?lang=$lang$cacheBuster';
       final response = await dio.get(url);
       if (response.statusCode == 200) {
         final List<LeagueLeadersModel> allLeaders = [];

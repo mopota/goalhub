@@ -15,6 +15,11 @@ class MatchDetailModel extends MatchDetailEntity {
     super.weather,
     super.broadcasts,
     super.odds,
+    super.isLive,
+    super.displayClock,
+    super.status,
+    super.awayScore,
+    super.homeScore,
     super.isPredictedLineup,
   });
 

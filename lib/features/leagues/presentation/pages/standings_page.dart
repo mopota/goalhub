@@ -55,12 +55,18 @@ class _StandingsPageState extends State<StandingsPage> with SingleTickerProvider
           ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _buildTableTab(),
-          _buildLeadersTab(),
-        ],
+      body: RefreshIndicator(
+        onRefresh: () async {
+          final String leagueIdOrSlug = widget.league.slug.isNotEmpty ? widget.league.slug : widget.league.id;
+          await context.read<LeaguesCubit>().fetchLeagueDetails(leagueIdOrSlug);
+        },
+        child: TabBarView(
+          controller: _tabController,
+          children: [
+            _buildTableTab(),
+            _buildLeadersTab(),
+          ],
+        ),
       ),
     );
   }

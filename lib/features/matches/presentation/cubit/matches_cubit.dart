@@ -38,17 +38,25 @@ class MatchesCubit extends Cubit<MatchesState> {
 
   Future<void> loadDate(DateTime date) async {
     final dateStr = DateFormat('yyyy-MM-dd', 'en_US').format(date);
+    final isToday = dateStr == DateFormat('yyyy-MM-dd', 'en_US').format(DateTime.now());
+
+    // If cached, emit immediately for speed, BUT refresh if it's today
     if (_matchesByDate.containsKey(dateStr) && _loadedDates.contains(dateStr)) {
       _emitLoaded();
-      return;
+      if (!isToday) return; // Only skip network if not today
     }
 
-    emit(MatchesLoading());
+    if (!isToday || !_matchesByDate.containsKey(dateStr)) {
+      emit(MatchesLoading());
+    }
+
     try {
       await _fetchDate(date);
       _emitLoaded();
     } catch (e) {
-      emit(MatchesError(e.toString()));
+      if (state is! MatchesLoaded) {
+        emit(MatchesError(e.toString()));
+      }
     }
   }
 
@@ -124,17 +132,14 @@ class MatchesCubit extends Cubit<MatchesState> {
 
   void _startLiveRefresh() {
     _refreshTimer?.cancel();
-    _refreshTimer = Timer.periodic(const Duration(seconds: 30), (timer) async {
+    _refreshTimer = Timer.periodic(const Duration(seconds: 15), (timer) async {
       final todayStr = DateFormat('yyyy-MM-dd', 'en_US').format(DateTime.now());
-      final todayMatches = _matchesByDate[todayStr] ?? [];
-      
-      final hasLiveMatches = todayMatches.any((m) => m.isLive);
-      if (hasLiveMatches) {
-        try {
-          await _fetchDate(DateTime.now());
-          _emitLoaded();
-        } catch (_) {}
-      }
+      // Regularly refresh today's data regardless of isLive status
+      // This catches matches that just started or ended
+      try {
+        await _fetchDate(DateTime.now());
+        _emitLoaded();
+      } catch (_) {}
     });
   }
   
