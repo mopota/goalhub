@@ -1,0 +1,258 @@
+{
+  "count": 105,
+  "pageIndex": 1,
+  "pageSize": 25,
+  "pageCount": 5,
+  "items": [
+    {
+      "clock": 60,
+      "addedClock": 0,
+      "displayClock": "1'",
+      "period": 1,
+      "probability": 0.02436,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 120,
+      "addedClock": 0,
+      "displayClock": "2'",
+      "period": 1,
+      "probability": 0.01807,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 180,
+      "addedClock": 0,
+      "displayClock": "3'",
+      "period": 1,
+      "probability": 0.00658,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 240,
+      "addedClock": 0,
+      "displayClock": "4'",
+      "period": 1,
+      "probability": 0.02303,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 300,
+      "addedClock": 0,
+      "displayClock": "5'",
+      "period": 1,
+      "probability": 0.01015,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 360,
+      "addedClock": 0,
+      "displayClock": "6'",
+      "period": 1,
+      "probability": 0.00864,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 420,
+      "addedClock": 0,
+      "displayClock": "7'",
+      "period": 1,
+      "probability": 0.02112,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 480,
+      "addedClock": 0,
+      "displayClock": "8'",
+      "period": 1,
+      "probability": 0.01263,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 540,
+      "addedClock": 0,
+      "displayClock": "9'",
+      "period": 1,
+      "probability": 0.00557,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 600,
+      "addedClock": 0,
+      "displayClock": "10'",
+      "period": 1,
+      "probability": 0.02451,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 660,
+      "addedClock": 0,
+      "displayClock": "11'",
+      "period": 1,
+      "probability": 0.02797,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 720,
+      "addedClock": 0,
+      "displayClock": "12'",
+      "period": 1,
+      "probability": 0.01373,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 780,
+      "addedClock": 0,
+      "displayClock": "13'",
+      "period": 1,
+      "probability": 0.01627,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 840,
+      "addedClock": 0,
+      "displayClock": "14'",
+      "period": 1,
+      "probability": 0.00881,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 900,
+      "addedClock": 0,
+      "displayClock": "15'",
+      "period": 1,
+      "probability": 0.024,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 960,
+      "addedClock": 0,
+      "displayClock": "16'",
+      "period": 1,
+      "probability": 0.01595,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1020,
+      "addedClock": 0,
+      "displayClock": "17'",
+      "period": 1,
+      "probability": 0.02015,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1080,
+      "addedClock": 0,
+      "displayClock": "18'",
+      "period": 1,
+      "probability": 0.02828,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1140,
+      "addedClock": 0,
+      "displayClock": "19'",
+      "period": 1,
+      "probability": 0.0138,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1200,
+      "addedClock": 0,
+      "displayClock": "20'",
+      "period": 1,
+      "probability": 0.00633,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1260,
+      "addedClock": 0,
+      "displayClock": "21'",
+      "period": 1,
+      "probability": 0.00201,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1320,
+      "addedClock": 0,
+      "displayClock": "22'",
+      "period": 1,
+      "probability": 0.00909,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1380,
+      "addedClock": 0,
+      "displayClock": "23'",
+      "period": 1,
+      "probability": 0.00904,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1440,
+      "addedClock": 0,
+      "displayClock": "24'",
+      "period": 1,
+      "probability": 0.00452,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    },
+    {
+      "clock": 1500,
+      "addedClock": 0,
+      "displayClock": "25'",
+      "period": 1,
+      "probability": 0.00226,
+      "competitor": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478?lang=en&region=us"
+      }
+    }
+  ]
+}

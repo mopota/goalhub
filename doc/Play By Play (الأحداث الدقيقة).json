@@ -1,0 +1,1711 @@
+{
+  "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays?source=38&lang=en&region=us",
+  "count": 1343,
+  "pageIndex": 1,
+  "pageSize": 25,
+  "pageCount": 54,
+  "items": [
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707254?lang=en&region=us",
+      "id": "49707254",
+      "type": {
+        "id": "80",
+        "text": "Kickoff",
+        "type": "kickoff"
+      },
+      "text": "First Half begins.",
+      "alternativeText": "First Half begins.",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-05T02:05Z",
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:03:54Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-05T02:05Z"
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707243?lang=en&region=us",
+      "id": "49707243",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Michael Olise (France) Pass at 0'",
+      "shortText": "Michael Olise Pass",
+      "alternativeText": "Michael Olise (France) Pass at 0'",
+      "shortAlternativeText": "Michael Olise Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:04Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "11",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/286831?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/14?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/286831/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:03:55Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:04Z",
+      "fieldPositionX": 50.2,
+      "fieldPositionY": 49.7,
+      "fieldPosition2X": 96.3,
+      "fieldPosition2Y": 100
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707244?lang=en&region=us",
+      "id": "49707244",
+      "type": {
+        "id": "176",
+        "text": "Out",
+        "type": "out"
+      },
+      "text": "Michael Olise (France) Out at 1'",
+      "shortText": "Michael Olise Out",
+      "alternativeText": "Michael Olise (France) Out at 1'",
+      "shortAlternativeText": "Michael Olise Out",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 4,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:16Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "11",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/286831?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/14?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:03:59Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:16Z",
+      "fieldPositionX": 94.4,
+      "fieldPositionY": 101.8
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707255?lang=en&region=us",
+      "id": "49707255",
+      "type": {
+        "id": "124",
+        "text": "Throw In",
+        "type": "throw-in"
+      },
+      "text": "Juan Jose Cáceres (Paraguay) Throw In at 1'",
+      "shortText": "Juan Jose Cáceres Throw In",
+      "alternativeText": "Juan Jose Cáceres (Paraguay) Throw In at 1'",
+      "shortAlternativeText": "Juan Jose Cáceres Throw In",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 16,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:04Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "4",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/84295?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/9?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/210/roster/84295/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "thrower"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:11Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:04Z",
+      "fieldPositionX": 8.4,
+      "fieldPositionY": 0,
+      "fieldPosition2X": 33.7,
+      "fieldPosition2Y": 3.3
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707256?lang=en&region=us",
+      "id": "49707256",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Adrien Rabiot (France) Pass at 1'",
+      "shortText": "Adrien Rabiot Pass",
+      "alternativeText": "Adrien Rabiot (France) Pass at 1'",
+      "shortAlternativeText": "Adrien Rabiot Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 18,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-05T02:08Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "14",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/176203?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/16?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/176203/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:13Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-05T02:08Z",
+      "fieldPositionX": 57.7,
+      "fieldPositionY": 89.6,
+      "fieldPosition2X": 63.5,
+      "fieldPosition2Y": 91.4
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707257?lang=en&region=us",
+      "id": "49707257",
+      "type": {
+        "id": "177",
+        "text": "Ball touch",
+        "type": "ball-touch"
+      },
+      "text": "Diego Gómez (Paraguay) Ball touch at 1'",
+      "shortText": "Diego Gómez Ball touch",
+      "alternativeText": "Diego Gómez (Paraguay) Ball touch at 1'",
+      "shortAlternativeText": "Diego Gómez Ball touch",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 19,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-05T02:08Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "8",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/192278?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/13?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/210/roster/192278/statistics/0?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:14Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-05T02:08Z",
+      "fieldPositionX": 31.8,
+      "fieldPositionY": 3.7
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707258?lang=en&region=us",
+      "id": "49707258",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Miguel Almirón (Paraguay) Pass at 1'",
+      "shortText": "Miguel Almirón Pass",
+      "alternativeText": "Miguel Almirón (Paraguay) Pass at 1'",
+      "shortAlternativeText": "Miguel Almirón Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 21,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:04Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "10",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/48128?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/17?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/210/roster/48128/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:17Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:04Z",
+      "fieldPositionX": 30.8,
+      "fieldPositionY": 4.6,
+      "fieldPosition2X": 56,
+      "fieldPosition2Y": 9.1
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707259?lang=en&region=us",
+      "id": "49707259",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Dayot Upamecano (France) Pass at 1'",
+      "shortText": "Dayot Upamecano Pass",
+      "alternativeText": "Dayot Upamecano (France) Pass at 1'",
+      "shortAlternativeText": "Dayot Upamecano Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 24,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:04Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "4",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/222793?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/5?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/222793/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:19Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:04Z",
+      "fieldPositionX": 36,
+      "fieldPositionY": 81,
+      "fieldPosition2X": 2.9,
+      "fieldPosition2Y": 79.1
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707262?lang=en&region=us",
+      "id": "49707262",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Mike Maignan (France) Pass at 1'",
+      "shortText": "Mike Maignan Pass",
+      "alternativeText": "Mike Maignan (France) Pass at 1'",
+      "shortAlternativeText": "Mike Maignan Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 27,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "16",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/189026?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/1?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/189026/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:22Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 3.5,
+      "fieldPositionY": 82.9,
+      "fieldPosition2X": 15.9,
+      "fieldPosition2Y": 89.6
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707260?lang=en&region=us",
+      "id": "49707260",
+      "type": {
+        "id": "182",
+        "text": "Attempted tackle",
+        "type": "attempted-tackle"
+      },
+      "text": "Diego Gómez (Paraguay) Attempted tackle at 1'",
+      "shortText": "Diego Gómez Attempted tackle",
+      "alternativeText": "Diego Gómez (Paraguay) Attempted tackle at 1'",
+      "shortAlternativeText": "Diego Gómez Attempted tackle",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 32,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "8",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/192278?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/13?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:27Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 81.6,
+      "fieldPositionY": 6.6
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707261?lang=en&region=us",
+      "id": "49707261",
+      "type": {
+        "id": "182",
+        "text": "Attempted tackle",
+        "type": "attempted-tackle"
+      },
+      "text": "Diego Gómez (Paraguay) Attempted tackle at 1'",
+      "shortText": "Diego Gómez Attempted tackle",
+      "alternativeText": "Diego Gómez (Paraguay) Attempted tackle at 1'",
+      "shortAlternativeText": "Diego Gómez Attempted tackle",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 33,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "8",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/192278?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/13?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:29Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 84.1,
+      "fieldPositionY": 9.6
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707263?lang=en&region=us",
+      "id": "49707263",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "William Saliba (France) Pass at 1'",
+      "shortText": "William Saliba Pass",
+      "alternativeText": "William Saliba (France) Pass at 1'",
+      "shortAlternativeText": "William Saliba Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 35,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "17",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/277385?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/4?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/277385/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:30Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 5.4,
+      "fieldPositionY": 89.9,
+      "fieldPosition2X": 11.8,
+      "fieldPosition2Y": 81
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707264?lang=en&region=us",
+      "id": "49707264",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Manu Koné (France) Pass at 1'",
+      "shortText": "Manu Koné Pass",
+      "alternativeText": "Manu Koné (France) Pass at 1'",
+      "shortAlternativeText": "Manu Koné Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 36,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "6",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/285226?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/17?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/285226/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:31Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 12,
+      "fieldPositionY": 81,
+      "fieldPosition2X": 17.8,
+      "fieldPosition2Y": 93.9
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707265?lang=en&region=us",
+      "id": "49707265",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Lucas Digne (France) Pass at 1'",
+      "shortText": "Lucas Digne Pass",
+      "alternativeText": "Lucas Digne (France) Pass at 1'",
+      "shortAlternativeText": "Lucas Digne Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 37,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "3",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/160115?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/8?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/160115/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:32Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 18.2,
+      "fieldPositionY": 94.2,
+      "fieldPosition2X": 29,
+      "fieldPosition2Y": 62.5
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707266?lang=en&region=us",
+      "id": "49707266",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Michael Olise (France) Pass at 1'",
+      "shortText": "Michael Olise Pass",
+      "alternativeText": "Michael Olise (France) Pass at 1'",
+      "shortAlternativeText": "Michael Olise Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 40,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "11",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/286831?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/14?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:35Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 29,
+      "fieldPositionY": 62.5,
+      "fieldPosition2X": 19.8,
+      "fieldPosition2Y": 58.3
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707267?lang=en&region=us",
+      "id": "49707267",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Dayot Upamecano (France) Pass at 1'",
+      "shortText": "Dayot Upamecano Pass",
+      "alternativeText": "Dayot Upamecano (France) Pass at 1'",
+      "shortAlternativeText": "Dayot Upamecano Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 41,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "4",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/222793?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/5?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:36Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 19.9,
+      "fieldPositionY": 58.4,
+      "fieldPosition2X": 37.6,
+      "fieldPosition2Y": 13.4
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707268?lang=en&region=us",
+      "id": "49707268",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Jules Koundé (France) Pass at 1'",
+      "shortText": "Jules Koundé Pass",
+      "alternativeText": "Jules Koundé (France) Pass at 1'",
+      "shortAlternativeText": "Jules Koundé Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 49,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "5",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/231692?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/9?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/231692/statistics/0?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:44Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 81.2,
+      "fieldPositionY": 25.1,
+      "fieldPosition2X": 88.8,
+      "fieldPosition2Y": 12.9
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707269?lang=en&region=us",
+      "id": "49707269",
+      "type": {
+        "id": "65",
+        "text": "Cross",
+        "type": "cross"
+      },
+      "text": "Ousmane Dembélé (France) Cross at 1'",
+      "shortText": "Ousmane Dembélé Cross",
+      "alternativeText": "Ousmane Dembélé (France) Cross at 1'",
+      "shortAlternativeText": "Ousmane Dembélé Cross",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 50,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-05T02:08Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "7",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/229744?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/33?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/229744/statistics/0?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:45Z",
+      "contactType": {
+        "id": "8",
+        "text": "Right Foot"
+      },
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-05T02:08Z",
+      "fieldPositionX": 92.9,
+      "fieldPositionY": 11.9,
+      "fieldPosition2X": 87.8,
+      "fieldPosition2Y": 40.1
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707270?lang=en&region=us",
+      "id": "49707270",
+      "type": {
+        "id": "179",
+        "text": "Interception",
+        "type": "interception"
+      },
+      "text": "Andrés Cubas (Paraguay) Interception at 1'",
+      "shortText": "Andrés Cubas Interception",
+      "alternativeText": "Andrés Cubas (Paraguay) Interception at 1'",
+      "shortAlternativeText": "Andrés Cubas Interception",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 51,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-05T02:08Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "14",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/202501?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/12?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/210/roster/202501/statistics/0?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:46Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-05T02:08Z",
+      "fieldPositionX": 12.2,
+      "fieldPositionY": 59.9
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707271?lang=en&region=us",
+      "id": "49707271",
+      "type": {
+        "id": "63",
+        "text": "Clear",
+        "type": "clear"
+      },
+      "text": "Omar Alderete (Paraguay) Clear at 1'",
+      "shortText": "Omar Alderete Clear",
+      "alternativeText": "Omar Alderete (Paraguay) Clear at 1'",
+      "shortAlternativeText": "Omar Alderete Clear",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 54,
+        "displayValue": "1'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "3",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/215401?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/210?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/4?lang=en&region=us"
+          },
+          "statistics": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/210/roster/215401/statistics/0?lang=en&region=us"
+          },
+          "order": 1
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:50Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 10.6,
+      "fieldPositionY": 62.4
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707272?lang=en&region=us",
+      "id": "49707272",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Dayot Upamecano (France) Pass at 2'",
+      "shortText": "Dayot Upamecano Pass",
+      "alternativeText": "Dayot Upamecano (France) Pass at 2'",
+      "shortAlternativeText": "Dayot Upamecano Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 63,
+        "displayValue": "2'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "4",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/222793?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/5?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:04:58Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 46.4,
+      "fieldPositionY": 9.5,
+      "fieldPosition2X": 61.3,
+      "fieldPosition2Y": 7.8
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707273?lang=en&region=us",
+      "id": "49707273",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Michael Olise (France) Pass at 2'",
+      "shortText": "Michael Olise Pass",
+      "alternativeText": "Michael Olise (France) Pass at 2'",
+      "shortAlternativeText": "Michael Olise Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 65,
+        "displayValue": "2'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "11",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/286831?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/14?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:05:00Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 62.5,
+      "fieldPositionY": 6.7,
+      "fieldPosition2X": 71.3,
+      "fieldPosition2Y": 5.5
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707274?lang=en&region=us",
+      "id": "49707274",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Ousmane Dembélé (France) Pass at 2'",
+      "shortText": "Ousmane Dembélé Pass",
+      "alternativeText": "Ousmane Dembélé (France) Pass at 2'",
+      "shortAlternativeText": "Ousmane Dembélé Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 68,
+        "displayValue": "2'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "7",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/229744?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/33?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:05:03Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 71,
+      "fieldPositionY": 5.2,
+      "fieldPosition2X": 66.2,
+      "fieldPosition2Y": 21.8
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707275?lang=en&region=us",
+      "id": "49707275",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Michael Olise (France) Pass at 2'",
+      "shortText": "Michael Olise Pass",
+      "alternativeText": "Michael Olise (France) Pass at 2'",
+      "shortAlternativeText": "Michael Olise Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 71,
+        "displayValue": "2'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "11",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/286831?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/14?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:05:06Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 68.2,
+      "fieldPositionY": 43.2,
+      "fieldPosition2X": 66.4,
+      "fieldPosition2Y": 63.7
+    },
+    {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/plays/49707296?lang=en&region=us",
+      "id": "49707296",
+      "type": {
+        "id": "118",
+        "text": "Pass",
+        "type": "pass"
+      },
+      "text": "Adrien Rabiot (France) Pass at 2'",
+      "shortText": "Adrien Rabiot Pass",
+      "alternativeText": "Adrien Rabiot (France) Pass at 2'",
+      "shortAlternativeText": "Adrien Rabiot Pass",
+      "awayScore": 0,
+      "homeScore": 0,
+      "period": {
+        "number": 1
+      },
+      "clock": {
+        "value": 75,
+        "displayValue": "2'"
+      },
+      "valid": true,
+      "scoringPlay": false,
+      "priority": false,
+      "scoreValue": 0,
+      "modified": "2026-07-04T21:10Z",
+      "team": {
+        "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+      },
+      "participants": [
+        {
+          "jersey": "14",
+          "athlete": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/176203?lang=en&region=us"
+          },
+          "team": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/teams/478?lang=en&region=us"
+          },
+          "position": {
+            "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/16?lang=en&region=us"
+          },
+          "order": 1,
+          "type": "passer"
+        }
+      ],
+      "source": {
+        "id": "38",
+        "description": "SA.ENVOY"
+      },
+      "substitution": false,
+      "wallclock": "2026-07-04T21:05:10Z",
+      "statYardage": 0,
+      "addedClock": {
+        "value": 0,
+        "displayValue": ""
+      },
+      "redCard": false,
+      "yellowCard": false,
+      "penaltyKick": false,
+      "ownGoal": false,
+      "shootout": false,
+      "hasVideoTagging": false,
+      "modifiedDate": "2026-07-04T21:10Z",
+      "fieldPositionX": 68.8,
+      "fieldPositionY": 67.3,
+      "fieldPosition2X": 78.8,
+      "fieldPosition2Y": 91
+    }
+  ]
+}

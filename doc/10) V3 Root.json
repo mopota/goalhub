@@ -1,0 +1,174 @@
+{
+  "count": 50,
+  "pageIndex": 1,
+  "pageSize": 25,
+  "pageCount": 2,
+  "items": [
+    {
+      "id": "8",
+      "name": "Aquatics",
+      "displayName": "Aquatics",
+      "slug": "aquatics"
+    },
+    {
+      "id": "9",
+      "name": "Archery",
+      "displayName": "Archery",
+      "slug": "archery"
+    },
+    {
+      "id": "10",
+      "name": "Athletics",
+      "displayName": "Athletics",
+      "slug": "athletics"
+    },
+    {
+      "id": "34",
+      "uid": "s:34",
+      "guid": "db10f653-d684-377e-91b6-8ce2911c1e3b",
+      "name": "Australian Rules Football",
+      "displayName": "Australian Rules Football",
+      "slug": "australian-football"
+    },
+    {
+      "id": "11",
+      "name": "Badminton",
+      "displayName": "Badminton",
+      "slug": "badminton"
+    },
+    {
+      "id": "1",
+      "uid": "s:1",
+      "guid": "e364bfcd-493d-3bfb-ac83-bd27d66fedd0",
+      "name": "Baseball",
+      "displayName": "Baseball",
+      "slug": "baseball"
+    },
+    {
+      "id": "40",
+      "uid": "s:40",
+      "guid": "cd70a58e-a830-330c-93ed-52360b51b632",
+      "name": "Basketball",
+      "displayName": "Basketball",
+      "slug": "basketball"
+    },
+    {
+      "id": "1",
+      "name": "Biathlon",
+      "displayName": "Biathlon",
+      "slug": "biathlon"
+    },
+    {
+      "id": "2",
+      "name": "Bobsleigh",
+      "displayName": "Bobsleigh",
+      "slug": "bobsleigh"
+    },
+    {
+      "id": "14",
+      "name": "Boxing",
+      "displayName": "Boxing",
+      "slug": "boxing"
+    },
+    {
+      "id": "85",
+      "name": "Breaking",
+      "displayName": "Breaking",
+      "slug": "breaking"
+    },
+    {
+      "id": "15",
+      "name": "Canoe/Kayak",
+      "displayName": "Canoe/Kayak",
+      "slug": "canoekayak"
+    },
+    {
+      "id": "200",
+      "uid": "s:200",
+      "guid": "b44c545f-8bb4-3505-8019-a0ac3c71db1f",
+      "name": "Cricket",
+      "displayName": "Cricket",
+      "slug": "cricket"
+    },
+    {
+      "id": "3",
+      "name": "Curling",
+      "displayName": "Curling",
+      "slug": "curling"
+    },
+    {
+      "id": "16",
+      "name": "Cycling",
+      "displayName": "Cycling",
+      "slug": "cycling"
+    },
+    {
+      "id": "17",
+      "name": "Equestrian",
+      "displayName": "Equestrian",
+      "slug": "equestrian"
+    },
+    {
+      "id": "18",
+      "name": "Fencing",
+      "displayName": "Fencing",
+      "slug": "fencing"
+    },
+    {
+      "id": "800",
+      "uid": "s:800",
+      "guid": "d3844ee0-840f-38da-9d7f-5b7b9a4a7ecc",
+      "name": "Field Hockey",
+      "displayName": "Field Hockey",
+      "slug": "field-hockey"
+    },
+    {
+      "id": "20",
+      "uid": "s:20",
+      "guid": "60459870-f8fc-3b3a-a6b9-d8af4bf19223",
+      "name": "Football",
+      "displayName": "Football",
+      "slug": "football"
+    },
+    {
+      "id": "19",
+      "name": "Soccer",
+      "displayName": "Football/Soccer",
+      "slug": "footballsoccer"
+    },
+    {
+      "id": "1100",
+      "uid": "s:1100",
+      "guid": "6fa31473-a322-3ed5-ac85-4e76b37065f3",
+      "name": "Golf",
+      "displayName": "Golf",
+      "slug": "golf"
+    },
+    {
+      "id": "20",
+      "name": "Gymnastics",
+      "displayName": "Gymnastics",
+      "slug": "gymnastics"
+    },
+    {
+      "id": "21",
+      "name": "Handball",
+      "displayName": "Handball",
+      "slug": "handball"
+    },
+    {
+      "id": "70",
+      "uid": "s:70",
+      "guid": "2512ac76-a335-39cb-af51-b9afffc6571d",
+      "name": "Ice Hockey",
+      "displayName": "Hockey",
+      "slug": "hockey"
+    },
+    {
+      "id": "23",
+      "name": "Judo",
+      "displayName": "Judo",
+      "slug": "judo"
+    }
+  ]
+}

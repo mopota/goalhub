@@ -1,0 +1,24 @@
+{
+  "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/189026?lang=en&region=us",
+  "playerId": 189026,
+  "period": 0,
+  "active": true,
+  "starter": true,
+  "jersey": "16",
+  "athlete": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/seasons/2026/athletes/189026?lang=en&region=us"
+  },
+  "position": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/positions/1?lang=en&region=us"
+  },
+  "statistics": {
+    "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/competitors/478/roster/189026/statistics/0?lang=en&region=us"
+  },
+  "subbedIn": {
+    "didSub": false
+  },
+  "subbedOut": {
+    "didSub": false
+  },
+  "formationPlace": "1"
+}

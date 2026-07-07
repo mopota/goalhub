@@ -1,0 +1,8 @@
+{
+  "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503/competitions/760503/relevancy?lang=en&region=us",
+  "type": "CRUCIAL",
+  "value": 70,
+  "factors": [
+    "CRUCIAL_SEASONTYPE"
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/tournaments/2026/seasons/4?lang=en&region=us",
+  "id": "4",
+  "displayName": "FIFA World Cup",
+  "shortDisplayName": "FIFA World Cup",
+  "abbreviation": "FIFA World Cup",
+  "groups": [
+    {
+      "id": "13801",
+      "displayName": "Round of 32",
+      "startDate": "2026-06-28T07:00Z",
+      "endDate": "2026-07-04T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760486?lang=en&region=us"
+            }
+          ],
+          "id": "760486",
+          "roundNumber": 1,
+          "bracketLocation": 9,
+          "winnerAdvancesTo": "85",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760487?lang=en&region=us"
+            }
+          ],
+          "id": "760487",
+          "roundNumber": 1,
+          "bracketLocation": 12,
+          "winnerAdvancesTo": "86",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760488?lang=en&region=us"
+            }
+          ],
+          "id": "760488",
+          "roundNumber": 1,
+          "bracketLocation": 11,
+          "winnerAdvancesTo": "86",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760489?lang=en&region=us"
+            }
+          ],
+          "id": "760489",
+          "roundNumber": 1,
+          "bracketLocation": 10,
+          "winnerAdvancesTo": "85",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760490?lang=en&region=us"
+            }
+          ],
+          "id": "760490",
+          "roundNumber": 1,
+          "bracketLocation": 14,
+          "winnerAdvancesTo": "87",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760491?lang=en&region=us"
+            }
+          ],
+          "id": "760491",
+          "roundNumber": 1,
+          "bracketLocation": 15,
+          "winnerAdvancesTo": "88",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760492?lang=en&region=us"
+            }
+          ],
+          "id": "760492",
+          "roundNumber": 1,
+          "bracketLocation": 13,
+          "winnerAdvancesTo": "87",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760493?lang=en&region=us"
+            }
+          ],
+          "id": "760493",
+          "roundNumber": 2,
+          "bracketLocation": 2,
+          "winnerAdvancesTo": "89",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760494?lang=en&region=us"
+            }
+          ],
+          "id": "760494",
+          "roundNumber": 2,
+          "bracketLocation": 1,
+          "winnerAdvancesTo": "89",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760495?lang=en&region=us"
+            }
+          ],
+          "id": "760495",
+          "roundNumber": 1,
+          "bracketLocation": 16,
+          "winnerAdvancesTo": "88",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760496?lang=en&region=us"
+            }
+          ],
+          "id": "760496",
+          "roundNumber": 2,
+          "bracketLocation": 3,
+          "winnerAdvancesTo": "90",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760497?lang=en&region=us"
+            }
+          ],
+          "id": "760497",
+          "roundNumber": 2,
+          "bracketLocation": 4,
+          "winnerAdvancesTo": "90",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760498?lang=en&region=us"
+            }
+          ],
+          "id": "760498",
+          "roundNumber": 2,
+          "bracketLocation": 5,
+          "winnerAdvancesTo": "91",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760499?lang=en&region=us"
+            }
+          ],
+          "id": "760499",
+          "roundNumber": 2,
+          "bracketLocation": 8,
+          "winnerAdvancesTo": "92",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760500?lang=en&region=us"
+            }
+          ],
+          "id": "760500",
+          "roundNumber": 2,
+          "bracketLocation": 6,
+          "winnerAdvancesTo": "91",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760501?lang=en&region=us"
+            }
+          ],
+          "id": "760501",
+          "roundNumber": 2,
+          "bracketLocation": 7,
+          "winnerAdvancesTo": "92",
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "13800",
+      "displayName": "Round of 16",
+      "startDate": "2026-07-04T07:00Z",
+      "endDate": "2026-07-09T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760502?lang=en&region=us"
+            }
+          ],
+          "id": "760502",
+          "roundNumber": 3,
+          "bracketLocation": 2,
+          "winnerAdvancesTo": "93",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760503?lang=en&region=us"
+            }
+          ],
+          "id": "760503",
+          "roundNumber": 3,
+          "bracketLocation": 1,
+          "winnerAdvancesTo": "93",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760504?lang=en&region=us"
+            }
+          ],
+          "id": "760504",
+          "roundNumber": 3,
+          "bracketLocation": 3,
+          "winnerAdvancesTo": "94",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760505?lang=en&region=us"
+            }
+          ],
+          "id": "760505",
+          "roundNumber": 3,
+          "bracketLocation": 4,
+          "winnerAdvancesTo": "94",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760506?lang=en&region=us"
+            }
+          ],
+          "id": "760506",
+          "roundNumber": 4,
+          "bracketLocation": 1,
+          "winnerAdvancesTo": "95",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760507?lang=en&region=us"
+            }
+          ],
+          "id": "760507",
+          "roundNumber": 4,
+          "bracketLocation": 2,
+          "winnerAdvancesTo": "95",
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760508?lang=en&region=us"
+            }
+          ],
+          "id": "760508",
+          "roundNumber": 5,
+          "bracketLocation": 1,
+          "active": true
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760509?lang=en&region=us"
+            }
+          ],
+          "id": "760509",
+          "roundNumber": 5,
+          "bracketLocation": 2,
+          "active": true
+        }
+      ]
+    },
+    {
+      "id": "13799",
+      "displayName": "Quarterfinals",
+      "startDate": "2026-07-09T07:00Z",
+      "endDate": "2026-07-14T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760510?lang=en&region=us"
+            }
+          ],
+          "id": "760510"
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760511?lang=en&region=us"
+            }
+          ],
+          "id": "760511"
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760512?lang=en&region=us"
+            }
+          ],
+          "id": "760512"
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760513?lang=en&region=us"
+            }
+          ],
+          "id": "760513"
+        }
+      ]
+    },
+    {
+      "id": "13798",
+      "displayName": "Semifinals",
+      "startDate": "2026-07-14T07:00Z",
+      "endDate": "2026-07-19T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760514?lang=en&region=us"
+            }
+          ],
+          "id": "760514"
+        },
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760515?lang=en&region=us"
+            }
+          ],
+          "id": "760515"
+        }
+      ]
+    },
+    {
+      "id": "13797",
+      "displayName": "3rd-Place Match",
+      "startDate": "2026-07-18T07:00Z",
+      "endDate": "2026-07-19T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760516?lang=en&region=us"
+            }
+          ],
+          "id": "760516"
+        }
+      ]
+    },
+    {
+      "id": "13803",
+      "displayName": "Final",
+      "startDate": "2026-07-19T07:00Z",
+      "endDate": "2026-08-01T06:59Z",
+      "matchups": [
+        {
+          "events": [
+            {
+              "$ref": "http://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760517?lang=en&region=us"
+            }
+          ],
+          "id": "760517"
+        }
+      ]
+    }
+  ]
+}
