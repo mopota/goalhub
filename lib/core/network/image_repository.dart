@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -100,7 +99,7 @@ class ImageRepository {
   }
 
   Future<String?> getLeagueLogo(String name) async {
-    final cacheKey = '${_cachePrefix}league_${name}'.toLowerCase().replaceAll(' ', '_');
+    final cacheKey = '${_cachePrefix}league_$name'.toLowerCase().replaceAll(' ', '_');
     
     final cached = _prefs.getString(cacheKey);
     if (cached != null) {

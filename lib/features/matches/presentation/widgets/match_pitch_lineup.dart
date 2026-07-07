@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/matches/domain/entities/details/match_lineup_entity.dart';
 
 import 'package:goalhub/features/matches/presentation/pages/player_details_page.dart';
@@ -8,7 +9,7 @@ class MatchPitchLineup extends StatelessWidget {
   final List<MatchPlayerEntity> starters;
   final List<MatchPlayerEntity> bench;
   final bool isHome;
-  final String teamLogo;
+  final String teamName;
   final String leagueSlug;
   final String? formation;
   final Function(MatchPlayerEntity)? onPlayerTap;
@@ -18,7 +19,7 @@ class MatchPitchLineup extends StatelessWidget {
     required this.starters,
     required this.bench,
     required this.isHome,
-    required this.teamLogo,
+    required this.teamName,
     required this.leagueSlug,
     this.formation,
     this.onPlayerTap,
@@ -116,7 +117,7 @@ class MatchPitchLineup extends StatelessWidget {
           pitchWidth: pitchWidth,
           pitchHeight: pitchHeight,
           isHome: isHome,
-          teamLogo: teamLogo,
+          teamName: teamName,
           leagueSlug: leagueSlug,
           customX: xPercent,
           customY: yPercent,
@@ -227,7 +228,7 @@ class _PositionedPlayer extends StatelessWidget {
   final double pitchWidth;
   final double pitchHeight;
   final bool isHome;
-  final String teamLogo;
+  final String teamName;
   final String leagueSlug;
   final double? customX;
   final double? customY;
@@ -239,7 +240,7 @@ class _PositionedPlayer extends StatelessWidget {
     required this.pitchWidth,
     required this.pitchHeight,
     required this.isHome,
-    required this.teamLogo,
+    required this.teamName,
     required this.leagueSlug,
     this.customX,
     this.customY,
@@ -329,29 +330,12 @@ class _PositionedPlayer extends StatelessWidget {
                     ],
                   ),
                   child: ClipOval(
-                    child: player.photo != null
-                        ? GoalHubImage(
-                            imageUrl: player.photo!,
-                            fit: BoxFit.cover,
-                            errorWidget: Container(
-                              color: Colors.grey[800],
-                              child: Center(
-                                child: Text(
-                                  player.jersey,
-                                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                            ),
-                          )
-                        : Container(
-                            color: Colors.grey[800],
-                            child: Center(
-                              child: Text(
-                                player.jersey,
-                                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          ),
+                    child: GoalHubImage(
+                      name: player.name,
+                      type: ImageType.player,
+                      secondaryName: teamName,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
                 

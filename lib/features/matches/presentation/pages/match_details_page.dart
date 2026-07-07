@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:goalhub/core/constants/country_timezones.dart';
 import 'package:goalhub/core/settings/settings_cubit.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/matches/domain/entities/details/match_detail_entity.dart';
 import 'package:goalhub/features/matches/domain/entities/details/match_event_entity.dart';
 import 'package:goalhub/features/matches/domain/entities/details/match_lineup_entity.dart';
@@ -111,7 +112,6 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                   children: [
                     _TeamHeader(
                       name: widget.match.homeTeamName,
-                      logo: widget.match.homeTeamLogo,
                       isHome: true,
                       heroTag: 'home_logo_${widget.match.id}',
                     ),
@@ -149,7 +149,6 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                     ),
                     _TeamHeader(
                       name: widget.match.awayTeamName,
-                      logo: widget.match.awayTeamLogo,
                       isHome: false,
                       heroTag: 'away_logo_${widget.match.id}',
                     ),
@@ -163,7 +162,8 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                       Hero(
                         tag: 'league_logo_${widget.match.id}',
                         child: GoalHubImage(
-                          imageUrl: widget.match.leagueLogo,
+                          name: widget.match.leagueName,
+                          type: ImageType.league,
                           height: 24,
                           width: 24,
                           fit: BoxFit.contain,
@@ -298,9 +298,11 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
                       border: Border.all(color: Theme.of(context).colorScheme.primary.withAlpha(100), width: 2),
                     ),
                     child: ClipOval(
-                      child: player.photo != null 
-                        ? GoalHubImage(imageUrl: player.photo!, fit: BoxFit.cover)
-                        : const Icon(Icons.person, size: 30),
+                      child: GoalHubImage(
+                        name: player.name,
+                        type: ImageType.player,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   const SizedBox(width: 16),
@@ -570,7 +572,7 @@ class _MatchDetailsPageState extends State<MatchDetailsPage> {
             starters: currentStarters,
             bench: currentBench,
             isHome: _selectedLineupTeamIndex == 0,
-            teamLogo: _selectedLineupTeamIndex == 0 ? widget.match.homeTeamLogo : widget.match.awayTeamLogo,
+            teamName: _selectedLineupTeamIndex == 0 ? widget.match.homeTeamName : widget.match.awayTeamName,
             leagueSlug: widget.match.leagueSlug,
             formation: currentFormation,
             onPlayerTap: (player) => _showPlayerMatchStats(context, player),
@@ -860,9 +862,10 @@ class _PlayerGridItem extends StatelessWidget {
                   border: Border.all(color: Colors.white24),
                 ),
                 child: ClipOval(
-                  child: player.photo != null
-                      ? GoalHubImage(imageUrl: player.photo!)
-                      : Center(child: Text(player.jersey, style: const TextStyle(color: Colors.white))),
+                  child: GoalHubImage(
+                    name: player.name,
+                    type: ImageType.player,
+                  ),
                 ),
               ),
               if (player.rating != null)
@@ -922,11 +925,10 @@ class _PlayerGridItem extends StatelessWidget {
 
 class _TeamHeader extends StatelessWidget {
   final String name;
-  final String logo;
   final bool isHome;
   final String heroTag;
 
-  const _TeamHeader({required this.name, required this.logo, required this.isHome, required this.heroTag});
+  const _TeamHeader({required this.name, required this.isHome, required this.heroTag});
 
   @override
   Widget build(BuildContext context) {
@@ -935,7 +937,8 @@ class _TeamHeader extends StatelessWidget {
         Hero(
           tag: heroTag,
           child: GoalHubImage(
-            imageUrl: logo,
+            name: name,
+            type: ImageType.team,
             height: 80,
             width: 80,
             fit: BoxFit.contain,

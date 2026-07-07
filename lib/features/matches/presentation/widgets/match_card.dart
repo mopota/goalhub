@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:goalhub/core/constants/country_timezones.dart';
 import 'package:goalhub/core/settings/settings_cubit.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/leagues/presentation/pages/team_details_page.dart';
 import 'package:goalhub/features/matches/domain/entities/match_entity.dart';
 import 'package:goalhub/features/matches/presentation/pages/match_details_page.dart';
@@ -57,11 +58,12 @@ class MatchCard extends StatelessWidget {
                   Expanded(
                     child: Row(
                       children: [
-                        if (match.leagueLogo.isNotEmpty)
+                        if (match.leagueName.isNotEmpty)
                           Hero(
                             tag: 'league_logo_${match.id}',
                             child: GoalHubImage(
-                              imageUrl: match.leagueLogo,
+                              name: match.leagueName,
+                              type: ImageType.league,
                               height: 20,
                               width: 20,
                               fit: BoxFit.contain,
@@ -147,7 +149,6 @@ class MatchCard extends StatelessWidget {
                       context,
                       id: match.homeTeamId,
                       name: match.homeTeamName,
-                      logo: match.homeTeamLogo,
                       heroTag: 'home_logo_${match.id}',
                     ),
                   ),
@@ -213,7 +214,6 @@ class MatchCard extends StatelessWidget {
                       context,
                       id: match.awayTeamId,
                       name: match.awayTeamName,
-                      logo: match.awayTeamLogo,
                       heroTag: 'away_logo_${match.id}',
                     ),
                   ),
@@ -251,7 +251,6 @@ class MatchCard extends StatelessWidget {
   Widget _buildTeamWidget(BuildContext context, {
     required String id,
     required String name,
-    required String logo,
     required String heroTag,
   }) {
     return InkWell(
@@ -263,7 +262,6 @@ class MatchCard extends StatelessWidget {
               leagueId: match.leagueSlug,
               teamId: id,
               teamName: name,
-              teamLogo: logo,
             ),
           ),
         );
@@ -275,7 +273,9 @@ class MatchCard extends StatelessWidget {
           Hero(
             tag: heroTag,
             child: GoalHubImage(
-              imageUrl: logo,
+              name: name,
+              type: ImageType.team,
+              secondaryName: match.leagueName,
               height: 48,
               width: 48,
               fit: BoxFit.contain,

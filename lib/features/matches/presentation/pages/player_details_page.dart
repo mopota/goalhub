@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/leagues/domain/entities/athlete_entity.dart';
 import 'package:goalhub/features/matches/domain/repositories/match_repository.dart';
 
@@ -36,7 +37,6 @@ class PlayerDetailsPage extends StatelessWidget {
           }
 
           final athlete = snapshot.data!;
-          final headshot = athlete.headshot ?? 'https://a.espncdn.com/i/headshots/soccer/players/full/$athleteId.png';
           
           return SingleChildScrollView(
             padding: const EdgeInsets.all(16),
@@ -54,7 +54,13 @@ class PlayerDetailsPage extends StatelessWidget {
                         border: Border.all(color: Theme.of(context).colorScheme.primary, width: 4),
                       ),
                       child: ClipOval(
-                        child: GoalHubImage(imageUrl: headshot, fit: BoxFit.cover),
+                        child: GoalHubImage(
+                          name: athlete.displayName,
+                          type: ImageType.player,
+                          secondaryName: athlete.teamName,
+                          tertiaryName: athlete.nationality,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
@@ -76,8 +82,12 @@ class PlayerDetailsPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        if (athlete.teamLogo != null)
-                          GoalHubImage(imageUrl: athlete.teamLogo!, width: 30, height: 30),
+                        GoalHubImage(
+                          name: athlete.teamName!,
+                          type: ImageType.team,
+                          width: 30, 
+                          height: 30,
+                        ),
                         const SizedBox(width: 8),
                         Text(
                           athlete.teamName!,
@@ -94,8 +104,12 @@ class PlayerDetailsPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        if (athlete.clubLogo != null)
-                          GoalHubImage(imageUrl: athlete.clubLogo!, width: 24, height: 24),
+                        GoalHubImage(
+                          name: athlete.clubName!,
+                          type: ImageType.team,
+                          width: 24, 
+                          height: 24,
+                        ),
                         const SizedBox(width: 6),
                         Text(
                           athlete.clubName!,

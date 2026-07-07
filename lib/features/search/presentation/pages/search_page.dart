@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:goalhub/features/leagues/domain/repositories/league_repository.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/matches/presentation/pages/player_details_page.dart';
 import 'package:goalhub/features/leagues/presentation/pages/team_details_page.dart';
 
@@ -68,9 +69,12 @@ class _SearchPageState extends State<SearchPage> {
                 if (id == null || displayName == null) return const SizedBox.shrink();
 
                 return ListTile(
-                  leading: logo != null
-                      ? GoalHubImage(imageUrl: logo, width: 40, height: 40)
-                      : const CircleAvatar(child: Icon(Icons.search)),
+                  leading: GoalHubImage(
+                    name: displayName,
+                    type: type == 'athlete' ? ImageType.player : ImageType.team,
+                    width: 40, 
+                    height: 40,
+                  ),
                   title: Text(displayName),
                   subtitle: Text(type ?? ''),
                   onTap: () {
@@ -93,7 +97,6 @@ class _SearchPageState extends State<SearchPage> {
                             leagueId: 'soccer',
                             teamId: id,
                             teamName: displayName,
-                            teamLogo: logo,
                           ),
                         ),
                       );

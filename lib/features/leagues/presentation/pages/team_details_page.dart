@@ -4,6 +4,7 @@ import 'package:goalhub/features/leagues/domain/entities/team_entity.dart';
 import 'package:goalhub/features/leagues/presentation/cubit/leagues_cubit.dart';
 import 'package:goalhub/features/leagues/presentation/cubit/leagues_state.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:goalhub/features/matches/domain/entities/match_entity.dart';
 import 'package:goalhub/features/matches/presentation/pages/player_details_page.dart';
 import 'package:goalhub/features/matches/presentation/widgets/match_card.dart';
@@ -77,8 +78,13 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> with SingleTickerProv
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              if (team.logo != null)
-                                GoalHubImage(imageUrl: team.logo!, height: 80, width: 80),
+                              GoalHubImage(
+                                name: team.displayName,
+                                type: ImageType.team,
+                                secondaryName: team.location,
+                                height: 80, 
+                                width: 80,
+                              ),
                               const SizedBox(height: 8),
                               if (team.location != null)
                                 Text(
@@ -237,21 +243,27 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> with SingleTickerProv
                 height: 40,
                 decoration: const BoxDecoration(shape: BoxShape.circle),
                 child: ClipOval(
-                  child: athlete.headshot != null 
-                    ? GoalHubImage(imageUrl: athlete.headshot!)
-                    : const Icon(Icons.person),
-                ),
-              ),
-              if (athlete.clubLogo != null)
-                Positioned(
-                  right: -4,
-                  bottom: -4,
-                  child: Container(
-                    padding: const EdgeInsets.all(2),
-                    decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                    child: GoalHubImage(imageUrl: athlete.clubLogo!, width: 16, height: 16),
+                  child: GoalHubImage(
+                    name: athlete.displayName,
+                    type: ImageType.player,
+                    secondaryName: team.displayName,
                   ),
                 ),
+              ),
+              Positioned(
+                right: -4,
+                bottom: -4,
+                child: Container(
+                  padding: const EdgeInsets.all(2),
+                  decoration: const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                  child: GoalHubImage(
+                    name: team.displayName,
+                    type: ImageType.team,
+                    width: 16, 
+                    height: 16,
+                  ),
+                ),
+              ),
             ],
           ),
           title: Text(athlete.displayName, style: const TextStyle(fontWeight: FontWeight.bold)),
@@ -301,9 +313,11 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> with SingleTickerProv
                 height: 32,
                 decoration: const BoxDecoration(shape: BoxShape.circle),
                 child: ClipOval(
-                  child: leader.headshot != null 
-                    ? GoalHubImage(imageUrl: leader.headshot!)
-                    : const Icon(Icons.person, size: 16),
+                  child: GoalHubImage(
+                    name: leader.displayName,
+                    type: ImageType.player,
+                    secondaryName: team.displayName,
+                  ),
                 ),
               ),
               title: Text(leader.displayName, style: const TextStyle(fontSize: 14)),
@@ -377,7 +391,9 @@ class _TeamDetailsPageState extends State<TeamDetailsPage> with SingleTickerProv
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12),
-                child: GoalHubImage(imageUrl: team.venueImage!),
+                child: GoalHubImage(
+                  imageUrl: team.venueImage!.contains('espncdn.com') ? null : team.venueImage,
+                ),
               ),
             ),
           const Divider(),

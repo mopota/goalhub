@@ -7,6 +7,7 @@ import 'package:goalhub/features/leagues/domain/entities/standing_entity.dart';
 import 'package:goalhub/features/leagues/presentation/pages/team_details_page.dart';
 import 'package:goalhub/features/matches/presentation/pages/player_details_page.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 
 import '../../../../core/settings/settings_cubit.dart';
 import '../../domain/entities/leader_entity.dart';
@@ -156,8 +157,13 @@ class _StandingsPageState extends State<StandingsPage> with SingleTickerProvider
                             DataCell(Text(s.rank)),
                             DataCell(Row(
                               children: [
-                                if (s.teamLogo != null)
-                                  GoalHubImage(imageUrl: s.teamLogo!, width: 24, height: 24),
+                                GoalHubImage(
+                                  name: s.teamName,
+                                  type: ImageType.team,
+                                  secondaryName: widget.league.displayName,
+                                  width: 24, 
+                                  height: 24,
+                                ),
                                 const SizedBox(width: 8),
                                 SizedBox(
                                   width: 120,
@@ -229,9 +235,11 @@ class _StandingsPageState extends State<StandingsPage> with SingleTickerProvider
                       height: 40,
                       decoration: const BoxDecoration(shape: BoxShape.circle),
                       child: ClipOval(
-                        child: leader.headshot != null 
-                          ? GoalHubImage(imageUrl: leader.headshot!)
-                          : const Icon(Icons.person),
+                        child: GoalHubImage(
+                          name: leader.displayName,
+                          type: ImageType.player,
+                          secondaryName: leader.teamName,
+                        ),
                       ),
                     ),
                   ],
@@ -239,11 +247,15 @@ class _StandingsPageState extends State<StandingsPage> with SingleTickerProvider
                 title: Text(leader.displayName, style: const TextStyle(fontWeight: FontWeight.bold)),
                 subtitle: Row(
                   children: [
-                    if (leader.teamLogo != null)
-                      Padding(
-                        padding: const EdgeInsets.only(right: 4),
-                        child: Image.network(leader.teamLogo!, width: 16, height: 16),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 4),
+                      child: GoalHubImage(
+                        name: leader.teamName,
+                        type: ImageType.team,
+                        width: 16,
+                        height: 16,
                       ),
+                    ),
                     Text(leader.teamName, style: const TextStyle(fontSize: 12)),
                   ],
                 ),
