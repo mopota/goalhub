@@ -28,13 +28,30 @@ class MatchModel extends MatchEntity {
     final date = DateTime.tryParse(dateStr) ?? DateTime.now();
     
     final statusObj = json['status'] ?? {};
-    final status = statusObj['displayValue'] ?? 'Upcoming';
-    final displayClock = statusObj['displayClock'] ?? '';
     final type = statusObj['type'] ?? {};
     final state = type['state']?.toString().toLowerCase() ?? 'pre';
+    final completed = type['completed'] == true;
+    final description = type['description']?.toString() ?? '';
     
+    // Core Status Logic
     final isLive = state == 'in';
-    final isFinished = state == 'post' || status.toLowerCase().contains('final');
+    final isFinished = state == 'post' || completed || description.toLowerCase().contains('final');
+
+    // status Label: Used in the card header
+    String statusLabel = description;
+    if (isFinished) {
+      statusLabel = 'FT';
+    } else if (isLive) {
+      if (description.toLowerCase().contains('halftime')) {
+        statusLabel = 'HT';
+      } else {
+        statusLabel = 'LIVE';
+      }
+    } else {
+      statusLabel = 'Upcoming';
+    }
+
+    final displayClock = statusObj['displayClock']?.toString() ?? '';
 
     final competitions = json['competitions'] as List? ?? [];
     final comp = competitions.isNotEmpty ? competitions[0] : {};
@@ -105,7 +122,7 @@ class MatchModel extends MatchEntity {
     return MatchModel(
       id: id,
       date: date,
-      status: status,
+      status: statusLabel,
       displayClock: displayClock,
       leagueName: actualLeagueName,
       leagueLogo: actualLeagueLogo,

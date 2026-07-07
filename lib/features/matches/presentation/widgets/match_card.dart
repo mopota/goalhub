@@ -20,11 +20,9 @@ class MatchCard extends StatelessWidget {
     final settings = context.watch<SettingsCubit>().state;
     final convertedTime = CountryTimezones.convertToCountryTime(match.date, settings.country);
 
-    // Logic to decide what to show in the center (Score or Time)
-    // We only show score if the match is LIVE, FINISHED, or has a non-zero result.
-    final bool hasStarted = match.isLive || match.isFinished;
-    final bool hasScore = match.homeScore != '0' || match.awayScore != '0';
-    final bool showScoreCenter = hasStarted || hasScore;
+    // Logic: Only show score if the match is LIVE or FINISHED.
+    // This avoids the "Upcoming 1 - 1" contradiction.
+    final bool showScoreCenter = match.isLive || match.isFinished;
 
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -112,7 +110,7 @@ class MatchCard extends StatelessWidget {
                           ),
                           const SizedBox(width: 4),
                           Text(
-                            '${match.displayClock}\'',
+                            match.status == 'HT' ? 'HT' : (match.displayClock.contains("'") ? match.displayClock : '${match.displayClock}\''),
                             style: theme.textTheme.labelSmall?.copyWith(
                               color: colorScheme.onError,
                               fontWeight: FontWeight.bold,
@@ -132,9 +130,9 @@ class MatchCard extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        if (showScoreCenter) // If showing score in middle, show date in header
+                        if (match.isFinished)
                           Text(
-                            DateFormat('MMM d, hh:mm a').format(convertedTime),
+                            DateFormat('MMM d').format(convertedTime),
                             style: theme.textTheme.labelSmall?.copyWith(fontSize: 9),
                           ),
                       ],

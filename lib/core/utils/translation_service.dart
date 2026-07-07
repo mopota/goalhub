@@ -12,6 +12,7 @@ class TranslationService {
     'Postponed': 'مؤجلة',
     'Cancelled': 'ملغاة',
     'Scheduled': 'مجدولة',
+    'Upcoming': 'قادمة',
     'In Progress': 'جارية',
     'Half Time': 'بين الشوطين',
     'Full Time': 'نهاية المباراة',

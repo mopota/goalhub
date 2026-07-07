@@ -132,10 +132,23 @@ class MatchesCubit extends Cubit<MatchesState> {
 
   void _startLiveRefresh() {
     _refreshTimer?.cancel();
-    _refreshTimer = Timer.periodic(const Duration(seconds: 15), (timer) async {
+    _refreshTimer = Timer.periodic(const Duration(seconds: 5), (timer) async {
       final todayStr = DateFormat('yyyy-MM-dd', 'en_US').format(DateTime.now());
-      // Regularly refresh today's data regardless of isLive status
-      // This catches matches that just started or ended
+      final matches = _matchesByDate[todayStr] ?? [];
+      
+      final hasLiveMatches = matches.any((m) => m.isLive);
+      final allFinished = matches.isNotEmpty && matches.every((m) => m.isFinished);
+
+      if (allFinished) {
+        // Stop polling entirely for today if all matches are done
+        timer.cancel();
+        return;
+      }
+
+      // If there are live matches, poll every 5 seconds.
+      // If only upcoming matches, poll every 30 seconds (every 6th tick) to check if any started.
+      if (!hasLiveMatches && timer.tick % 6 != 0) return;
+
       try {
         await _fetchDate(DateTime.now());
         _emitLoaded();
