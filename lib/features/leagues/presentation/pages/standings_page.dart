@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:goalhub/core/settings/settings_cubit.dart';
 import 'package:goalhub/features/leagues/domain/entities/league_entity.dart';
 import 'package:goalhub/features/leagues/presentation/cubit/leagues_cubit.dart';
 import 'package:goalhub/features/leagues/presentation/cubit/leagues_state.dart';
@@ -8,11 +9,7 @@ import 'package:goalhub/features/leagues/presentation/pages/team_details_page.da
 import 'package:goalhub/features/matches/presentation/pages/player_details_page.dart';
 import 'package:goalhub/core/widgets/goalhub_image.dart';
 import 'package:goalhub/core/network/image_repository.dart';
-
-import '../../../../core/settings/settings_cubit.dart';
 import '../../domain/entities/leader_entity.dart';
-
-import 'package:goalhub/core/utils/translation_service.dart';
 
 class StandingsPage extends StatefulWidget {
   final LeagueEntity league;
@@ -147,7 +144,6 @@ class _StandingsPageState extends State<StandingsPage> with SingleTickerProvider
                                     leagueId: widget.league.id,
                                     teamId: s.teamId,
                                     teamName: s.teamName,
-                                    teamLogo: s.teamLogo,
                                   ),
                                 ),
                               );

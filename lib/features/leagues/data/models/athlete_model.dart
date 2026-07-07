@@ -54,8 +54,7 @@ class AthleteModel extends AthleteEntity {
         fullName: athlete['fullName']?.toString() ?? athlete['displayName']?.toString() ?? '',
         displayName: athlete['displayName']?.toString() ?? '',
         shortName: athlete['shortName']?.toString() ?? '',
-        headshot: athlete['headshot'] is Map ? athlete['headshot']['href']?.toString() : 
-                  'https://a.espncdn.com/i/headshots/soccer/players/full/${athlete['id']}.png',
+        headshot: athlete['headshot'] is Map ? athlete['headshot']['href']?.toString() : null,
         position: athlete['position'] is Map ? athlete['position']['displayName']?.toString() : athlete['position']?.toString(),
         age: athlete['age']?.toString(),
         height: athlete['displayHeight']?.toString(),

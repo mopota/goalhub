@@ -103,9 +103,7 @@ class MatchPlayerModel extends MatchPlayerEntity {
       yVal = json['y']?.toDouble() ?? position['y']?.toDouble();
     }
 
-    final photoUrl = id.isNotEmpty 
-        ? 'https://a.espncdn.com/i/headshots/soccer/players/full/$id.png' 
-        : null;
+    final photoUrl = null;
 
     // Parse statistics if available
     final Map<String, String> parsedStats = {};

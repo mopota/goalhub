@@ -63,7 +63,6 @@ class _SearchPageState extends State<SearchPage> {
                 final result = _results[index];
                 final String? type = result['type']?.toString();
                 final String? displayName = result['displayName']?.toString();
-                final String? logo = result['image']?['href']?.toString();
                 final String? id = result['id']?.toString();
 
                 if (id == null || displayName == null) return const SizedBox.shrink();
