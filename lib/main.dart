@@ -18,6 +18,7 @@ import 'package:goalhub/features/leagues/presentation/cubit/leagues_cubit.dart';
 import 'package:goalhub/features/news/presentation/cubit/news_cubit.dart';
 import 'package:goalhub/features/onboarding/presentation/pages/onboarding_page.dart';
 import 'package:goalhub/features/matches/presentation/cubit/matches_cubit.dart';
+import 'package:goalhub/core/network/image_repository.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -32,6 +33,7 @@ void main() async {
   
   final dio = Dio();
   final translationService = TranslationService();
+  final imageRepository = ImageRepository(dio, prefs);
   
   // Data Sources
   final leagueRemoteDataSource = LeagueRemoteDataSourceImpl(dio);
@@ -51,6 +53,7 @@ void main() async {
         RepositoryProvider<MatchRepository>.value(value: matchRepository),
         RepositoryProvider<NewsRepository>.value(value: newsRepository),
         RepositoryProvider<TranslationService>.value(value: translationService),
+        RepositoryProvider<ImageRepository>.value(value: imageRepository),
       ],
       child: MultiBlocProvider(
         providers: [
